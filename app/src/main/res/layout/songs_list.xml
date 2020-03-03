@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="42dp"
+    android:orientation="horizontal">
+
+    <ImageButton
+        android:id="@+id/id_imageButton_back"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:adjustViewBounds="true"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:contentDescription="@string/blank"
+        android:elevation="0dp"
+        android:onClick="OnClick_Back"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/ic_keyboard_backspace_black_24dp"
+        tools:srcCompat="@drawable/ic_keyboard_backspace_black_24dp" />
+
+    <TextView
+        android:id="@+id/id_textView_title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="10"
+        android:gravity="center_vertical"
+        android:text="@string/blank"
+        android:textColor="@color/colourBlack"
+        android:textSize="24sp" />
+
+    <ImageButton
+        android:id="@+id/id_imageButton_search"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:contentDescription="@string/blank"
+        android:onClick="OnClick_FindLocalMusic"
+        app:srcCompat="@drawable/ic_location_searching_black_24dp"
+        tools:srcCompat="@drawable/ic_location_searching_black_24dp" />
+
+    <ImageButton
+        android:id="@+id/id_imageButton_more"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:contentDescription="@string/blank"
+        android:onClick="OnClick_More"
+        app:srcCompat="@drawable/ic_more_vert_black_24dp"
+        tools:srcCompat="@drawable/ic_more_vert_black_24dp" />
+
+</LinearLayout>
